@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Project</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body onload="display()">
+    <!-- Header Section Starts -->
+    <header>
+      <h1>Add New Contact</h1>
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- Main Section Starts -->
+    <main>
+      <div class="container">
+        <div class="innerContainer">
+          <div class="form-item">
+            <label for="name">Name : </label>
+          </div>
+          <div class="form-item">
+            <label for="name">Contact : </label>
+          </div>
+        </div>
+        <div class="innerContainer">
+          <div class="form-item">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your full name"
+            />
+          </div>
+          <div class="form-item">
+            <input
+              type="number"
+              name="contact"
+              id="contact"
+              placeholder="Enter your contact number"
+            />
+          </div>
+        </div>
+      </div>
+      <button class="btn" id="btn" onclick="addContact()">Save</button>
+
+      <div id="response"></div>
+
+      <hr />
+
+      <h4 class="table_heading">List of All Contacts :</h4>
+      <hr />
+      <div class="table_container">
+        <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="contactlist"></tbody>
+          </table>
+      </div>
+      
+    </main>
+    <!-- Main Section Ends -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
